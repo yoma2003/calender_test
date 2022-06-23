@@ -1,0 +1,14 @@
+<h1>カレンダーはCalenderじゃなくCalendar!!</h1>
+<% @calenders.each do |calender| %>
+  <div><%= calender.target_date %></div>
+<% end %>
+
+<%= form_with model: @calender, local:true do |f| %>
+  <%= f.text_field :target_date, class: "calender_form", readonly: "" %>
+  <%= f.submit "送信" %>
+<% end %>
+
+<%= form_with model: @calender, local:true do |f| %>
+  <%= f.text_field :target_date, class: "calender_form", readonly: "" %>
+  <%= f.submit "送信" %>
+<% end %>
